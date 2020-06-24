@@ -16,13 +16,24 @@
   display: flex;
   align-items: center;
 }
-#search-box .search-tap .tap-head-search input{
+#search-box .search-tap .tap-head-search .search-input{
   background: white;
   flex: 1;
   height: 40rpx;
   border-radius: 20rpx;
+  display: flex;
 }
-#search-box .search-tap .tap-head-search view{
+#search-box .search-tap .tap-head-search .search-input icon{
+  width: 40rpx;
+  height: 40rpx;
+  padding: 0 10rpx;
+}
+#search-box .search-tap .tap-head-search .search-input input{
+  font-size: 24rpx;
+  height: 40rpx;
+  flex: 1;
+}
+#search-box .search-tap .tap-head-search .cancle-btn{
   text-align: center;
   font-size: 24rpx;
   width: 80rpx;
