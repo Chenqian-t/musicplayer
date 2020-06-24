@@ -1,0 +1,15 @@
+<view id="search-box">
+  <view class="search-tap">
+    <view class="tap-head-search">
+      <input type="text" placeholder="搜索 音乐/歌手" placeholder-style="font-size: 24rpx;line-height:40rpx;margin-left:60rpx;" bindfocus="focusHandle" bindblur="blurHandle" bindconfirm="confirmHandle" bindinput="inputHandle" value="{{value}}"></input>
+      <view style="{{canclebtnshow}}" bindtap="tapCancleHandle">取消</view>
+    </view>
+    <view class="tap-body">
+      <view class="tap-body-head">热门搜索</view>
+      <view class="tap-body-content" wx:for="{{hotSearch}}" bindtap="tapHandle" data-keyInfor="{{hotSearch[index]}}">
+        {{hotSearch[index]}}
+      </view>
+    </view>
+  </view>
+</view>
+<search-list id="searchList" style="{{style}}"></search-list>

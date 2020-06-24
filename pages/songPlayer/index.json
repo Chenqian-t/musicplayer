@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#5E5E5E",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "usingComponents": {
+    "music-list": "../../components/music-list/index"
+  }
+}

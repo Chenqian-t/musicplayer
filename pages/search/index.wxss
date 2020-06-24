@@ -1,0 +1,40 @@
+#search-box{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#search-box .search-tap{
+  min-height: 100%;
+  padding: 0 20rpx;
+  background: #eee;
+}
+#search-box .search-tap .tap-head-search{
+  padding: 20rpx 0;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+}
+#search-box .search-tap .tap-head-search input{
+  background: white;
+  flex: 1;
+  height: 40rpx;
+  border-radius: 20rpx;
+}
+#search-box .search-tap .tap-head-search view{
+  text-align: center;
+  font-size: 24rpx;
+  width: 80rpx;
+}
+#search-box .search-tap .tap-body view:nth-child(2){
+  color: #27D8A4;
+}
+#search-box .search-tap .tap-body .tap-body-content{
+  font-size: 24rpx;
+  display: inline-block;
+  border-radius: 30rpx;
+  background: white;
+  padding: 10rpx 20rpx;
+  margin: 20rpx 20rpx 0 0;
+}

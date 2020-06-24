@@ -1,0 +1,7 @@
+<view class="bottom-music-player" style="bottom:{{showable}}">
+  <image class="music-player-songpic" src="{{song.pic}}" style="{{animation}}"></image>
+  <text class="music-player-song-title">{{song.title}}</text>
+  <image class="music-control-btn" src="{{src}}" bindtap="tapbtn"></image>
+  <image class="music-player-list" src="./images/musiclist.png" bindtap="musicListShowAble"></image>
+</view>
+<music-list id="musicList"></music-list>

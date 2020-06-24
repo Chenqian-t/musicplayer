@@ -1,0 +1,6 @@
+<scroll-view class="list-content" scroll-y="{{true}}">
+  <view wx:for="{{songs}}" class="list-content-item" bindtap="tapClickHandle" data-index="{{index}}">
+    <text class="list-content-item1">{{songs[index].title}}</text>
+    <text class="list-content-item2">{{songs[index].author}}</text>
+  </view>
+</scroll-view>

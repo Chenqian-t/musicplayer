@@ -1,0 +1,86 @@
+/* 最大宽度750rpx */
+view,navigator,swiper,swiper-item,image{
+  box-sizing: border-box;
+}
+
+#top-box{
+  background: #eee;
+  padding: 10rpx 20rpx 0 20rpx;
+}
+
+/* search-btn */
+.search-btn{
+  width: 100%;
+  height: 50rpx;
+  border-radius: 23rpx;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-btn view{
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.search-btn view icon{
+  padding-right: 5rpx;
+}
+.search-btn text{
+  flex: 1;
+  padding-left: 5rpx;
+  font-size: 24rpx;
+  color: #999999;
+}
+
+/* song-recommend */
+.song-recommend{
+  padding: 20rpx 0;
+}
+.song-recommend .song-recommend-head{
+  overflow: auto;
+  position: relative;
+}
+.song-recommend .song-recommend-head text{
+  float: left;
+  font-size: 32rpx;
+}
+.song-recommend .song-recommend-head navigator{
+  font-size: 24rpx;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.song-recommend .song-recommend-body{
+  display: flex;
+  padding: 10rpx 0;
+}
+.song-recommend .song-recommend-body image{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 10rpx;
+}
+.song-recommend .song-recommend-body view{
+  padding-left: 20rpx;
+  height: 100rpx;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.song-recommend .song-recommend-body view text:first-child{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+}
+.song-recommend .song-recommend-body view text:last-child{
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 24rpx;
+  color: #999999;
+}
+.song-recommend .song-recommend-body .song-recommend-body-text{
+  text-align: right;
+  line-height: 100rpx;
+  width: auto;
+  font-size: 24rpx;
+}

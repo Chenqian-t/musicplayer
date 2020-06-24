@@ -1,0 +1,11 @@
+<view class="music-list-tap" style="{{isShow}}">
+  <view class="opacity-view" bindtap="closeListTap"></view>
+  <view class="music-list-body">
+    <view class="music-list-body1" bindtap="changePlayMode">
+      <image class="list-body1-image" src="{{playMode[playModeIndex].imgsrc}}"></image>
+      <text class="list-body1-text">{{playMode[playModeIndex].mode}}</text>
+    </view>
+    <view class="music-list-body2">{{song.title?song.title+' - '+song.author:'暂无待播放歌曲'}}</view>
+    <view class="music-list-body3" bindtap="closeListTap">关闭</view>
+  </view>
+</view>

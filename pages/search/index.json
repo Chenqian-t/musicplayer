@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#eee",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "搜索",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "usingComponents": {
+    "search-list": "../../components/search-list/index"
+  }
+}

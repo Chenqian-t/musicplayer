@@ -1,0 +1,21 @@
+<view id="top-box" style="padding-bottom:{{paddingBottom}}">
+  <view class="search-btn" bindtap="tapToSearch">
+    <view><icon type="search" size="30rpx" color="#999999"></icon></view>
+    <text>搜索</text>
+  </view>
+  <view class="song-recommend">
+    <view class="song-recommend-head">
+      <text>歌曲推荐</text>
+      <navigator>更多	></navigator>
+    </view>
+    <view wx:for="{{songRecommend}}" class="song-recommend-body" bindtap="songRecommendClick"  data-song-id="{{item.songid}}">
+      <image src="{{item.pic}}"></image>
+      <view>
+        <text>{{item.title}}</text>
+        <text>{{item.author}}</text>
+      </view>
+      <text class="song-recommend-body-text">></text>
+    </view>
+  </view>
+  <music-player></music-player>
+</view>

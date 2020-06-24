@@ -1,0 +1,128 @@
+#song-player{
+  background: rgb(94, 94, 94);
+  padding: 0 20rpx;
+}
+
+/* song-lrc */
+#song-player .song-lrc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#song-player .song-lrc view{
+  position: relative;
+  margin: 30rpx 0;
+}
+#song-player .song-lrc view .song-pic{
+  width: 400rpx;
+  height: 400rpx;
+  vertical-align: middle;
+}
+#song-player .song-lrc view .song-control{
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  top: 150rpx;
+  left: 150rpx;
+}
+#song-player .song-lrc text{
+  margin: 10rpx 0;
+  font-size: 24rpx;
+  color: #999999;
+}
+#song-player .song-lrc text[class=active-lrc]{
+  font-size: 28rpx;
+  color: white;
+}
+
+/* icons */
+#song-player .icons view{
+  width: 300rpx;
+  margin: 0 auto;
+}
+#song-player .icons view image{
+  width: 50%;
+  height: 90rpx;
+  box-sizing: border-box;
+  padding: 20rpx 0;
+}
+#song-player .icons button{
+  width: 400rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0;
+  border-radius: 40rpx;
+  color: white;
+  background: #27D8A4;
+  font-size: 32rpx;
+  font-weight: 100;
+}
+
+/* song-you-like */
+#song-player .song-you-like{
+  padding: 10rpx 0;
+}
+#song-player .song-you-like .song-you-like-title{
+  display: block;
+  color: white;
+  font-size: 32rpx;
+  margin: 40rpx 0 20rpx 0;
+}
+#song-player .song-you-like .song-you-like-item{
+  display: flex;
+  align-items: center;
+  padding: 10rpx 0;
+}
+#song-player .song-you-like .song-you-like-item image{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 10rpx;
+}
+#song-player .song-you-like .song-you-like-item view{
+  flex: 1;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+#song-player .song-you-like .song-you-like-item view text:first-child{
+  color: white;
+  font-size: 32rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+#song-player .song-you-like .song-you-like-item view text:last-child{
+  font-size: 24rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+#song-player .song-you-like .song-you-like-item text{
+  font-size: 24rpx;
+  color: #999999;
+}
+
+/* 右下侧边栏 */
+#song-player .control-btn{
+  position: fixed;
+  right: 30rpx;
+  bottom: 100rpx;
+  background: #eee;
+  border-radius: 50rpx;
+}
+#song-player .control-btn view{
+  height: 100rpx;
+  width: 80rpx;
+  box-sizing: border-box;
+  margin: 25rpx 10rpx;
+}
+#song-player .control-btn view image{
+  display: block;
+  height: 60rpx;
+  width: 100%;
+}
+#song-player .control-btn view text{
+  display: block;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  text-align: center;
+}

@@ -1,0 +1,40 @@
+<view id="song-player">
+  <view class="song-lrc">
+    <view>
+      <image class="song-pic" src="{{songItem.pic}}"></image>
+      <image class="song-control" src="{{songControlImage.src}}" bindtap="musicControl"></image>
+    </view>
+    <text></text>
+    <text class="active-lrc">暂无歌词</text>
+    <text></text>
+  </view>
+  <view class="icons">
+    <view>
+      <image src="./images/download.png" mode="aspectFit" bindtap="clickToDownload"></image>
+      <image src="{{isLike}}" mode="aspectFit" bindtap="isLikeHandle"></image>
+    </view>
+    <button open-type="share">分享给微信好友</button>
+  </view>
+  <view class="song-you-like">
+    <text class="song-you-like-title">猜你喜欢</text>
+    <view wx:for="{{songYouLike}}" class="song-you-like-item" bindtap="switchsong" data-index="{{index}}">
+      <image src="{{item.pic}}"></image>
+      <view>
+        <text>{{item.title}}</text>
+        <text>{{item.author}}</text>
+      </view>
+      <text class="song-recommend-body-text">></text>
+    </view>
+  </view>
+  <view class="control-btn">
+    <view bindtap="musicListShowAble">
+      <image src="./images/musiclist.png" mode="aspectFit"></image>
+      <text>列表</text>
+    </view>
+    <view bindtap="tapToSearch">
+      <image src="./images/search.png" mode="aspectFit"></image>
+      <text>搜索</text>
+    </view>
+  </view>
+</view>
+<music-list id="musicList"></music-list>
